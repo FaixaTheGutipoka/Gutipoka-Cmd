@@ -1,23 +1,48 @@
 # Gutipoka CMD
 
-A concise guide to set up CloverCmd appearance using Fastfetch and a custom Command Prompt/PowerShell configuration.
+A concise, reproducible setup to customize Windows Command Prompt / PowerShell using Fastfetch, UTF-8 support, and a custom terminal appearance.
+
+This project treats terminal configuration as code—structured, repeatable, and easy to move to a new machine.
 
 ## Overview
 
-This repo contains example settings and Fastfetch files used to give Command Prompt a Clover-themed prompt (ASCII clover). Follow the steps below to reproduce the setup.
+This repository contains:
+- A customized Command Prompt / PowerShell appearance
+- Fastfetch configuration with custom ASCII art
+- Terminal settings for fonts, colors, and layout
+- A PowerShell profile that initializes the environment correctly
+
+*The goal is simple:*
+open CMD or PowerShell → instantly get a clean, themed system overview.
+
+Follow the steps below to reproduce the setup.
 
 ## Screenshot
 
-Below is a screenshot of my Command Prompt showing the Clover ASCII and Fastfetch output:
+Current state of my command prompt:
 
-![CloverCmd screenshot](screenshot.png)
+![Gutipoka CMD screenshot](Gutipoka CMD.png)
 
 
-## Files in this repo
-- [Comand Prompt/settings.json](Comand%20Prompt/settings.json)
-- [fastfetch/ascii.txt](fastfetch/ascii.txt)
-- [fastfetch/config.jsonc](fastfetch/config.jsonc)
-- [PowerShell/profile.ps1](PowerShell/profile.ps1)
+## Repository Structure
+```powershell
+.
+├── Command Prompt/
+│   └── settings.json			# Windows Terminal / CMD appearance config
+│
+├── PowerShell/
+│   └── profile.ps1			# PowerShell startup profile
+│
+├── fastfetch/
+│   ├── ascii.txt				# Custom ASCII art
+│   └── config.jsonc			# Fastfetch configuration
+├── Gutipoka CMD.png			# Screenshot (example output)
+├── JetBrains Mono.png     	# Font reference
+│
+├── LICENSE
+└── README.md
+
+```
 
 ## Steps
 
