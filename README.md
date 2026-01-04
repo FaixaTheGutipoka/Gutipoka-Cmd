@@ -50,7 +50,7 @@ Current state of my command prompt:
 - Internet connection (for installing Fastfetch)
 
 ## Steps
-1. Install JetBrains Mono Font
+**1. Install JetBrains Mono Font**
 	- Download the zip file [JetBrainsMono-2.304](JetBrainsMono-2.304)
 	- Extract everything
 	- Go to the fonts > ttf folder
@@ -61,9 +61,9 @@ Current state of my command prompt:
 
 ![JetBrains Mono screenshot](JetBrains%20Mono.png)
 
-2. Install Fastfetch
+**2. Install Fastfetch**
 
-**Using winget (recommended):**
+*Using winget (recommended):*
 
 ```powershell
 winget install fastfetch
@@ -71,18 +71,18 @@ winget install fastfetch
 
 If winget fails, install Fastfetch manually from [fastfetch official releases](https://github.com/fastfetch-cli/fastfetch) and ensure fastfetch is added to your PATH.
 
-**Verify installation:**
+*Verify installation:*
 
 ```powershell
 
 fastfetch
 ```
 
-3. Set up Fastfetch config directory
+**3. Set up Fastfetch config directory**
 
 Fastfetch looks for its config inside a .config directory in your user profile.
 
-Run the following in PowerShell:
+*Run the following in PowerShell:*
 
 ```powershell
 New-Item -ItemType Directory -Path "$env:USERPROFILE\.config" -Force
@@ -91,7 +91,7 @@ attrib +h "$env:USERPROFILE\.config"
 New-Item -ItemType Directory -Path "$env:USERPROFILE\.config\fastfetch" -Force
 ```
 
-**Now copy the files from this repo:**
+*Now copy the files from this repo (adjust the path):*
 
 ```powershell
 Copy-Item -Path .\fastfetch\* `
@@ -99,7 +99,7 @@ Copy-Item -Path .\fastfetch\* `
   -Recurse -Force
 ```
 
-**Alternatively, copy them manually into:**
+*Alternatively, copy them manually into:*
 
 ```powershell
 %USERPROFILE%\.config\fastfetch
