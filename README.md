@@ -108,8 +108,8 @@ Copy-Item -Path .\fastfetch\* `
 **4. Configure Windows Terminal / Command Prompt**
 
 - Open Windows Terminal → Settings → Open JSON file.
-- Paste or merge the contents of:[Comand Prompt/settings.json](Comand%20Prompt/settings.json)
-	*Highly recommend going through them and only adding parts that are necessary*
+- Paste or merge the contents of: [Comand Prompt/settings.json](Comand%20Prompt/settings.json)
+	- *Highly recommend going through them and only adding parts that are necessary*
 
 1. Paste the Command Prompt settings
 
