@@ -53,7 +53,7 @@ Current state of my command prompt:
 1. Install JetBrains Mono Font
 	- Download the zip file [JetBrainsMono-2.304](JetBrainsMono-2.304)
 	- Extract everything
-	- Go to the fonts > ttf folder
+	- Go to the [fonts/ttf] folder
 	- Select all > right click > install (everything will be installed)
 	-
 
