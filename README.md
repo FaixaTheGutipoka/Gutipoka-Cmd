@@ -21,7 +21,7 @@ Follow the steps below to reproduce the setup.
 
 Current state of my command prompt:
 
-![Gutipoka CMD screenshot](Gutipoka CMD.png)
+![Gutipoka CMD screenshot](Gutipoka%20CMD.png)
 
 
 ## Repository Structure
@@ -43,8 +43,14 @@ Current state of my command prompt:
 └── README.md
 
 ```
+## Prerequisites
+- Windows 10 or Windows 11
+- Windows Terminal (recommended, but CMD works too)
+- PowerShell 5.1+ or PowerShell 7+
+- Internet connection (for installing Fastfetch)
 
 ## Steps
+1. Install JetBrains Mono Font
 
 1. Paste the Command Prompt settings
 
