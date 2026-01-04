@@ -12,7 +12,7 @@ This repository contains:
 - Terminal settings for fonts, colors, and layout
 - A PowerShell profile that initializes the environment correctly
 
-*The goal is simple:*
+The goal is simple:
 open CMD or PowerShell → instantly get a clean, themed system overview.
 
 Follow the steps below to reproduce the setup.
@@ -51,6 +51,11 @@ Current state of my command prompt:
 
 ## Steps
 1. Install JetBrains Mono Font
+	- Download the zip file [JetBrainsMono-2.304](JetBrainsMono-2.304)
+	- Extract everything
+	- Go to the fonts > ttf folder
+	- Select all > right click > install (everything will be installed)
+	-
 
 1. Paste the Command Prompt settings
 
