@@ -109,7 +109,45 @@ Copy-Item -Path .\fastfetch\* `
 
 - Open Windows Terminal → Settings → Open JSON file.
 - Paste or merge the contents of: [Comand Prompt/settings.json](Comand%20Prompt/settings.json)
-	- *Highly recommend going through them and only adding parts that are necessary*
+	- *Highly recommend going through the contents in the settings.json file (both from this repo and your own terminal's one) and only adding parts that are necessary*
+
+- This file controls:
+	- Font (JetBrains Mono recommended)
+	- Color scheme
+	- Transparency and padding
+	- Cursor style
+
+*Restart Windows Terminal after saving.*
+
+**5. Configure PowerShell profile**
+Check your PowerShell profile path:
+
+```powershell
+$PROFILE
+```
+- If it doesn’t exist:
+
+	```powershell
+	New-Item -Path $PROFILE -ItemType File -Force
+	```
+
+	Edit it:
+
+	```powershell
+	notepad $PROFILE
+	```
+	or
+
+	```powershell
+	code $PROFILE
+	```
+
+	Paste the contents of:
+
+	```powershell
+	PowerShell/profile.ps1
+	```
+
 
 1. Paste the Command Prompt settings
 
