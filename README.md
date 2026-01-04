@@ -54,11 +54,11 @@ Current state of my command prompt:
 
 - Download the zip file [JetBrainsMono-2.304](JetBrainsMono-2.304)
 - Extract everything
-	- Go to the fonts > ttf folder
-	- Select all > right click > install (everything will be installed)
-	- Open a new window in VScode > Settings
-	- Search font
-	- Go to font family > Put "JetBrains Mono" at the front (like in the give picture)
+- Go to the fonts → ttf folder
+- Select all → right click → install (everything will be installed)
+- Open a new window in VScode → Settings
+- Search font
+- Go to font family → Put "JetBrains Mono" at the front (like in the give picture)
 
 ![JetBrains Mono screenshot](JetBrains%20Mono.png)
 
@@ -105,6 +105,11 @@ Copy-Item -Path .\fastfetch\* `
 ```powershell
 %USERPROFILE%\.config\fastfetch
 ```
+**4. Configure Windows Terminal / Command Prompt**
+
+- Open Windows Terminal → Settings → Open JSON file.
+- Paste or merge the contents of:[Comand Prompt/settings.json](Comand%20Prompt/settings.json)
+	*Highly recommend going through them and only adding parts that are necessary*
 
 1. Paste the Command Prompt settings
 
