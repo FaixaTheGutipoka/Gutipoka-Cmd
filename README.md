@@ -120,6 +120,7 @@ Copy-Item -Path .\fastfetch\* `
 *Restart Windows Terminal after saving.*
 
 **5. Configure PowerShell profile**
+
 Check your PowerShell profile path:
 
 ```powershell
