@@ -61,20 +61,56 @@ Current state of my command prompt:
 
 ![JetBrains Mono screenshot](JetBrains%20Mono.png)
 
-1. Paste the Command Prompt settings
-
-- Open Windows Terminal or Command Prompt settings and paste the JSON from:
-  - [Comand Prompt/settings.json](Comand%20Prompt/settings.json)
-
 2. Install Fastfetch
 
-Run:
+**Using winget (recommended):**
 
 ```powershell
 winget install fastfetch
 ```
 
-If that package name doesn't match in `winget`, install Fastfetch from its official repo or releases page and ensure `fastfetch` is on your PATH.
+If winget fails, install Fastfetch manually from [fastfetch official releases](https://github.com/fastfetch-cli/fastfetch) and ensure fastfetch is added to your PATH.
+
+**Verify installation:**
+
+```powershell
+
+fastfetch
+```
+
+3. Set up Fastfetch config directory
+
+Fastfetch looks for its config inside a .config directory in your user profile.
+
+Run the following in PowerShell:
+
+```powershell
+New-Item -ItemType Directory -Path "$env:USERPROFILE\.config" -Force
+attrib +h "$env:USERPROFILE\.config"
+
+New-Item -ItemType Directory -Path "$env:USERPROFILE\.config\fastfetch" -Force
+```
+
+**Now copy the files from this repo:**
+
+```powershell
+Copy-Item -Path .\fastfetch\* `
+  -Destination "$env:USERPROFILE\.config\fastfetch" `
+  -Recurse -Force
+```
+
+**Alternatively, copy them manually into:**
+
+```powershell
+%USERPROFILE%\.config\fastfetch
+```
+
+1. Paste the Command Prompt settings
+
+- Open Windows Terminal or Command Prompt settings and paste the JSON from:
+  - [Comand Prompt/settings.json](Comand%20Prompt/settings.json)
+
+
 
 3. Create or open your PowerShell profile
 
